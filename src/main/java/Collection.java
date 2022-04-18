@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Collection extends Personel {
     public static void main(String[] args) {
@@ -12,15 +13,32 @@ Personel p1 = new Personel ();
         p1.setIsim("Mehmet");
         p1.setIdNum(54321);
 
-        Ogrenci ogr = new Ogrenci();
-        ogr.setName("Ekrem");
-        ogr.setDers("JAva");
-
-
         ArrayList<Personel> ilkList = new ArrayList<>();
 
         ilkList.add(p);
         ilkList.add(p1);
+
+        ArrayList<Ogrenci> ilkList1 = new ArrayList<>();
+
+        Ogrenci ogr = new Ogrenci();
+        ogr.setName("Ekrem");
+        ogr.setDers("JAva");
+
+        ilkList1.add(ogr);
+
+        LinkedList <Personel> link = new LinkedList<>();
+        link.offer(p);
+        link.offer(p1);
+
+
+        LinkedList <Ogrenci> link1 = new LinkedList <>();
+        link1.offer(ogr);
+
+        System.out.println(p);
+        System.out.println(p1);
+        System.out.println(ogr);
+        System.out.println(link);
+        System.out.println(link1);
 
 
     }
