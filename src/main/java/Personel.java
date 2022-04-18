@@ -8,10 +8,15 @@ public class Personel {
         this.isim = isim;
     }
 
-    public void String toString() {
-        return"personel{" +
-                "isim'" + isim + ''
+    public int getIdNum() {
+        return idNum;
     }
 
+    public String getIsim() {
+        return isim;
+    }
 
+    public void setIdNum(int idNum) {
+        this.idNum = idNum;
+    }
 }
