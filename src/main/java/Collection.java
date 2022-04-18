@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Collection extends Personel {
     public static void main(String[] args) {
@@ -40,6 +42,12 @@ Personel p1 = new Personel ();
         System.out.println(link);
         System.out.println(link1);
 
-
+Set <String> set1 = new TreeSet<>();
+            set1.add("ekrem");
+            set1.add("akrem");
+            set1.add("ukrem");
+            set1.add("okrem");
+            set1.add("ikrem");
+            System.out.println(set1);
     }
 }
